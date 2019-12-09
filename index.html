@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tamagotchi</title>
+    <style>
+      .restart {
+        display: none;
+      }    
+      .bar {
+        padding-left: 2px;
+        width: 100px;
+        background: #fc0808;
+        padding: 2px;
+        margin-bottom: 10px;
+      }
+    </style>
+</head>
+<body>
+  <div id="text"></div>
+  <p>Happiness</p>
+  <div id="happiness" class="bar"></div>
+  <button id="btnPet" class="btnPet">Run</button>
+  <p>Food</p>
+  <div id="fullness" class="bar"></div>
+  <button id="btnFeed" class="btnFeed">Eat</button>
+  <p>Clean</p>
+  <div id="cleanness" class="bar"></div>
+  <button id="btnClean" class="btnClean">Wash</button>
+  <p>Health</p>
+  <div id="health" class="bar"></div>
+  <button id="btnVisitDoctor">Visit doctor</button>         
+  <p>Socialization</p>
+  <div id="socialization" class="bar"></div>
+  <button id="btnGoToBar">Go to bar</button>                   
+  <p>Money</p>
+  <div id="money" class="bar"></div>
+  <button id="btnStartBusiness">Start a business</button>
+  <button id="btnGoToWork">Go to work</button>
+  <button id="btnBuyFood">Buy Food:</button>          
+  <p class="timer">The life time of Tamagotchi: <span id="seconds">00</span>:<span id="tens">00</span></p>
+  <button id="start">Start</button>
+  <button id="btnRestart" class="restart" onclick="location.btnRestart()">Restart</button> 
+  <script src="tamagotchi.js"></script>
+</body>
+</html>
